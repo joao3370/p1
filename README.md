@@ -52,7 +52,7 @@ Faça o download do zip no link abaixo:
 
 
 ## Preview bash
-![Screenshot gif](https://raw.githubusercontent.com/joao3370/p1/https://im2.ezgif.com/tmp/ezgif-2-e19352e74cdb.gif
+![Screenshot gif](https://im2.ezgif.com/tmp/ezgif-2-e19352e74cdb.gif)
 
 ## Para iniciar o bot use:
 

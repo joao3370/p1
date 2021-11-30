@@ -220,7 +220,7 @@ font: 'block',
 align: "center",
 gradient: ['red', 'magenta']
 });                
-const banner2 = cfonts.render((`BDR-BOT|V2.0`), {
+const banner2 = cfonts.render((`BOT|V1.0`), {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']

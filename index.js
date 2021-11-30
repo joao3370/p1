@@ -82,7 +82,7 @@ cdd = "480000"
 crtt = "Jogo da velha" 
 baterai = 'não detectado'
 charging = 'não detectado'
-emoji_bot = "♨️💫"
+emoji_bot = "😊"
 const limitawal = 30
 
 //_NUMERO DO DONO DO BOT
@@ -728,7 +728,7 @@ bdr.on('connecting', () => {
 start('2', ' ')
 })
 bdr.on('open', () => {
-success('2', "Bot Conectado")
+success('2', "Pedro-Bot Conectad")
 })
 
 await bdr.connect({ timeoutMs: 2400 * 1000 });

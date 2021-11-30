@@ -1,7 +1,7 @@
 {
-  "name": "Bdr-BOT",
+  "name": "BOT",
   "version": "0.1.0",
-  "description": "Dono: Bdr",
+  "description": "Dono:eu",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -17,8 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Bdr",
-  "license": "ISC",
+  "author": "joao
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1",
     "@kagchi/kag-api": "^2.0.0",

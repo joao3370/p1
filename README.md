@@ -52,7 +52,7 @@ Faça o download do zip no link abaixo:
 
 
 ## Preview bash
-![Screenshot gif](https://raw.githubusercontent.com/joao3370/Bottestev4-main/ezgif-6-29619481adf2.mp4
+![Screenshot gif](https://raw.githubusercontent.com/joao3370/p1/ezgif-2-a802131e9a8a.mp4
 
 ## Para iniciar o bot use:
 

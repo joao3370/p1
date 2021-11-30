@@ -1,5 +1,5 @@
 {
-  "name": "BOT",
+  "name":"Bdr-BOT",
   "version": "0.1.0",
   "description": "Dono:eu",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "joao
+  "author": "joao",
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1",
     "@kagchi/kag-api": "^2.0.0",

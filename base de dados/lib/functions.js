@@ -77,19 +77,19 @@ const spinner = {
 "Conectan",
 "Conectand", 
 "Conectando",
-"Conectando o",
-"Conectando o B",
-"Conectando o BD",
-"Conectando o BDR",
-"Conectando o BDRR",
-"Conectando o BDR-B",
-"Conectando o BDR-BOT",
-"Conectando o BDR-BOTT",
-"Conectando o BDR-BOTTT",
-"Conectando o BDR-BOTTT-",
-"Conectando o BDR-BOTTTTT",
-"Conectando o BDR-BOTTTTTT",
-"Conectando o BDR-BOTTTTTTT",
+"Conectandoo",
+"Conectandooo",
+"Conectandoooo",
+"Conectandooooo",
+"Conectandoooooo",
+"Conectandooooooo",
+"Conectandoooooooo",
+"Conectandooooooooo",
+"Conectandoooooooooo",
+"Conectandooooooooooo",
+"Conectandoooooooooooo",
+"Conectandooooooooooooo",
+"Conectandoooooooooooooo",
   ]}
 
 let globalSpinner;
@@ -190,7 +190,7 @@ font: 'block',
 align: "center",
 gradient: ['red', 'magenta']
 });                
-const banner2 = cfonts.render((`BDR-BOT V2.0`), {
+const banner2 = cfonts.render((`BOT V1.0`), {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']

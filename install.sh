@@ -49,7 +49,7 @@ clear
 apt-get install figlet -y
 clear
 
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 echo -e " ${CYAN}A instalar todas as dependências..." | lolcat -a -d 50 
 
@@ -60,7 +60,7 @@ sleep 5
 apt-get update -y
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: apt-get upgrade"
@@ -69,7 +69,7 @@ sleep 5
 apt-get upgrade -y
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 if [ -e "$HOME/../usr/bin/nodejs" ]; then
 	echo -e " ${GREEN}nodejs detectado prosseguindo..."
@@ -84,7 +84,7 @@ apt-get install nodejs -y
 fi
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 if [ -e "$HOME/../usr/bin/ffmpeg" ]; then
 	echo -e " ${GREEN}ffmpeg detectado prosseguindo..."
@@ -99,7 +99,7 @@ apt-get install ffmpeg -y
 fi
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 if [ -e "$HOME/../usr/bin/wget" ]; then
 	echo -e " ${GREEN}wget detectado prosseguindo..."
@@ -114,7 +114,7 @@ apt-get install wget -y
 fi
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: apt-get install tesseract"
@@ -124,7 +124,7 @@ apt-get install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Limpando cache npm..."
@@ -133,7 +133,7 @@ sleep 5
 npm cache clean -f --no-bin-links
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Instalando módulos npm"
@@ -144,7 +144,7 @@ npm install --no-bin-links
 npm i --no-bin-links
 sleep 2
 clear
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando o comando: npm audit fix --force"
@@ -170,7 +170,7 @@ echo ""
 echo ""
 echo ""
 echo ""
-figlet -c -f slant -t 'Bdr-BOT' | lolcat 
+figlet -c -f slant -t 'BOT' | lolcat 
 echo ""
 echo ""
 echo ""

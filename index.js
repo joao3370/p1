@@ -790,7 +790,7 @@ num = anu.participants[0]
 try {
 ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
 } catch {
-ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
 }
 mett = ["1", "2", "3"] 
 res = mett[Math.floor(Math.random() * mett.length)]
@@ -1176,7 +1176,7 @@ var replys_loli= replys[Math.floor(Math.random() * replys.length)]
 /********** MESS && PTBR **********/
 mess = {
 espere: `${replys_loli}`,
-success: '『❗』Sucesso',
+success: '『⏳』Sucesso',
 error: {
 stick: '『❗』 Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
 },
@@ -1303,12 +1303,12 @@ patt = 'Deus-Sama🔰'
 
 /********** FUCTION TIPO DE USUÁRIO **********/
 if (groupAdmins) {
-prema = 'Ademir🤓'
+prema = 'Adm'
 }
 if (isOwner) {
-prema = `El ${SeuNome}🕴🏽`
+prema = `Dono ${SeuNome}`
 } else {
-var prema = 'Membro comum🗿'
+var prema = 'Membro'
 }
 
 /********** FUCTION BODIA **********/
@@ -1714,13 +1714,13 @@ var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-
 buff = await getBuffer(ppimg)
 const tekentod = 
 `
-╭•❏ 📝 Registro
- • ⪧ ⃝༘⃕🎈REGISTRADO(A)
-│⪧ ⃝༘⃕⚡ɪᴅ: ${serialUser}
- • Rᴇɢɪsᴛʀᴏ ʙᴇᴍ sᴜᴄᴇᴅɪᴅᴏ!!
-│⪧ ⃝༘⃕⏳ʜᴏʀᴀʀɪᴏ: ${time}
- • ⪧ ⃝༘⃕,⚠️ɴᴏᴍᴇ: ${pushname}
-│⪧ ⃝༘⃕🎈ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
+╭Registro
+ REGISTRADO(A)
+│ɪᴅ: ${serialUser}
+ • Rᴇɢɪsᴛʀᴏ com sᴜᴄᴇᴅɪᴅᴏ!!
+│⏳ʜᴏʀᴀʀɪᴏ: ${time}
+ɴᴏᴍᴇ: ${pushname}
+ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
 ╰━━━━━━─ • ─━━━━━━❋ཻུ۪۪⸙
 `            
 veri = sender
@@ -1750,13 +1750,13 @@ var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-
 buff = await getBuffer(ppimg)
 const tekentod = 
 `
-╭•❏ 📝 ૨૯g¡ઽƬ૨ѳ
- • ⪧ ⃝༘⃕🎈REGISTRADO(A)
-│⪧ ⃝༘⃕⚡ɪᴅ: ${serialUser}
- • Rᴇɢɪsᴛʀᴏ ʙᴇᴍ sᴜᴄᴇᴅɪᴅᴏ!!
-│⪧ ⃝༘⃕⏳ʜᴏʀᴀʀɪᴏ: ${time}
- • ⪧ ⃝༘⃕,⚠️ɴᴏᴍᴇ: ${pushname}
-│⪧ ⃝༘⃕🎈ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
+╭Registro
+ REGISTRADO(A)
+│ɪᴅ: ${serialUser}
+ Rᴇɢɪsᴛʀᴏ com sᴜᴄᴇᴅɪᴅᴏ!!
+│⏳ʜᴏʀᴀʀɪᴏ: ${time}
+ɴᴏᴍᴇ: ${pushname}
+│ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
 ╰━━━━━━─ • ─━━━━━━❋ཻུ۪۪⸙
 `            
 veri = sender
@@ -1821,7 +1821,7 @@ enviar(String(e))
 }
 }
 
-/********** COMANDOS SEM PREFIX, BR bdr **********/
+/********** COMANDOS SEM PREFIX, BR **********/
 if (isAutconversa) {
 if ((budy.match("Pq")) || (budy.match("pq"))) {
 mett = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -1938,8 +1938,8 @@ break
 case 'dono':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
-bdr.sendMessage(from, '『❗』Nᴜᴍᴇʀᴏ do Mᴇᴜ Cʀɪᴀᴅᴏʀ foi Eɴᴠɪᴀᴅᴏ no seu ᴘʀɪᴠᴀᴅᴏ',MessageType.text, { quoted: mek} )
-bdr.sendMessage(sender, 'Esᴛᴇ ᴇ́ ᴍᴇᴜ ᴄʀɪᴀᴅᴏʀ [(>_<)] Cᴀsᴏ ᴛᴇɴʜᴀ ᴀʟɢᴜᴍᴀ ᴅᴜᴠɪᴅᴀ ғᴀʟᴇ ᴄᴏᴍ ᴇʟᴇ',MessageType.text, { quoted: mek} )
+bdr.sendMessage(from, '『⏳』Nᴜᴍᴇʀᴏ do Mᴇᴜ Cʀɪᴀᴅᴏʀ foi Eɴᴠɪᴀᴅᴏ no seu ᴘʀɪᴠᴀᴅᴏ',MessageType.text, { quoted: mek} )
+bdr.sendMessage(sender, 'Esᴛᴇ ᴇ́ ᴍᴇᴜ ᴄʀɪᴀᴅᴏʀ. Cᴀsᴏ ᴛᴇɴʜᴀ ᴀʟɢᴜᴍᴀ ᴅᴜᴠɪᴅᴀ ғᴀʟᴇ ᴄᴏᴍ ᴇʟᴇ',MessageType.text, { quoted: mek} )
 bdr.sendMessage(sender, {displayname: "Jeff", vcard: vcard}, MessageType.contact, {quoted: mek})
 await requestCash(sender)
 break
@@ -2041,7 +2041,7 @@ if (!isBotGroupAdmins) return stickerAdm(from)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return enviar('Marque uma mensagem do alvo!')
 kick = mek.message.extendedTextMessage.contextInfo.participant
 bdr.groupRemove(from, [kick])
-enviar('Removendo participantes com sucesso')
+enviar('Removendo participante com sucesso')
 break
 
 case 'reviver':
@@ -2051,7 +2051,7 @@ if (!isBotGroupAdmins) return stickerAdm(from)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return enviar('Marque uma mensagem do alvo!')
 addGay = mek.message.extendedTextMessage.contextInfo.participant
 bdr.groupAdd(from, [addGay])
-enviar('_Vou tentar adicionar esse macaco_\n\nCaso da erro tente adicionar manualmente!')
+enviar('_Vou tentar adicionar_\n\nCaso da erro tente adicionar manualmente!')
 break
 
 case 'promote':
@@ -2062,7 +2062,7 @@ if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMes
 promoverGay = mek.message.extendedTextMessage.contextInfo.participant
 bdr.groupMakeAdmin(from, [promoverGay])
 bdrzinhokkkk = mek.message.extendedTextMessage.contextInfo.participant
-enviar(`Esse macaco *@${bdrzinhokkkk.split('@')[0]}*... agora é admintrador`)
+enviar(`Esse membro *@${a.split('@')[0]}*... agora é admintrador`)
 break
 
 case 'demote':
@@ -2073,7 +2073,7 @@ if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMes
 rebaixarGay = mek.message.extendedTextMessage.contextInfo.participant
 bdr.groupDemoteAdmin(from, [rebaixarGay])
 kapiuugvb = mek.message.extendedTextMessage.contextInfo.participant
-enviar(`Pronto, Esse macaco *@${kapiuugvb.split('@')[0]}*... perdeu seu cargo de admintrador`)
+enviar(`Pronto, Esse adm *@${a.split('@')[0]}*... perdeu seu cargo de admintrador`)
 break 
 
 case 'addprem': 
@@ -2104,11 +2104,11 @@ let dellprem = body.slice(12)
 let positio = prem.indexOf(dellprem)
 prem.splice(positio, 1)
 fs.writeFileSync('./base de dados/datauser/premium.json', JSON.stringify(prem))
-susp = `✖@${mentioned[0].split('@')[0]} foi removido da lista de usuários premium✖`
+susp = `✖@${mentioned[0].split('@')[0]} foi removido da lista de usuários premium`
 mentions(`${susp}`, mentioned, true)   
 break
 
-case 'group': //by resen e bdr
+case 'group': //
 case 'grup':
 case 'gp':
 addFilter(from)
@@ -2313,7 +2313,7 @@ members_id.push(mem.jid)
 mentions(' '+todos+' ', members_id, true)
 break
 
-case 'info': //by resen e bdr
+case 'info':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 if (args.length < 1) return enviar(`${emoji_bot} Use ${p + comando} <Grupo ou Perfil>`)
@@ -2355,13 +2355,13 @@ ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gamb
 }
 pf = 
 `
-╭•❏ ઽ૯ષ ℓ૯√૯ℓ
- • ⋟ 🪀 Nome: ${pushname}
-│⋟ 🔮 Level: ${usLevel}
- • ⋟ 💎 XP: ${usXp}/${requirXp}
-│⋟ 🧸 Patente: ${patt}
- • ⋟ 📂 link: wa.me/${sender.split("@")[0]}
-│⋟ 👾 Seu recado: ${teste65.status}
+╭•❏ seu level
+ Nome: ${pushname}
+│Level: ${usLevel}
+  XP: ${usXp}/${requirXp}
+ Patente: ${patt}
+ link: wa.me/${sender.split("@")[0]}
+│ Seu recado: ${teste65.status}
 ╰━━━━━━─ • ─━━━━━━❋ཻུ۪۪⸙
 `
 its = await getBuffer (ppimg)
@@ -2397,7 +2397,7 @@ if (args[0].toLowerCase() == 'grupo') {
 linkgc = await bdr.groupInviteCode(from)
 enviar('https://chat.whatsapp.com/'+linkgc)
 } else if (args[0].toLowerCase() == 'pv') {
-if (isGroup) enviar(`『❗』${comando} enviado no seu pv`)
+if (isGroup) enviar(`『⏳』${comando} enviado no seu pv`)
 linkgc = await bdr.groupInviteCode(from)
 bdr.sendMessage(sender, 'https://chat.whatsapp.com/'+linkgc, MessageType.text)
 }

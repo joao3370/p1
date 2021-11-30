@@ -728,7 +728,7 @@ bdr.on('connecting', () => {
 start('2', ' ')
 })
 bdr.on('open', () => {
-success('2', "Bdr-BOT Conectad")
+success('2', "Bot Conectado")
 })
 
 await bdr.connect({ timeoutMs: 2400 * 1000 });

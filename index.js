@@ -996,7 +996,7 @@ bdr.on('chat-update', async (mek) => {
   const isBotk = numberBot.includes(sender)
   
   /************** VERIFICADO CONST ************/
-  const dfrply = fs.readFileSync('./base de dados/lib/bot/fotos/bdr_lolizit.jpg')
+  const dfrply = fs.readFileSync('./base de dados/lib/bot/fotos/Pedro-Bot.jpg.jpg')
 
 /************** PUSHNAME (NOME) ************/
   const conts = mek.key.fromMe ? bdr.user.jid : bdr.contacts[sender] || { notify: jid.replace(/@.+/, '') }
@@ -1418,7 +1418,7 @@ const tob = { key: {fromMe: false,participant: "0@s.whatsapp.net", remoteJid: "0
 const tob1 = { key: {fromMe: false,participant: "0@s.whatsapp.net", remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Lolizita", "caption": `${bolo_de_carne}`}}}
 
 /** Verificado com o nome e foto **/
-const tob2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${bolo_de_carne}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;AKAME,;;;\nFN:AKAME,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`./base de dados/lib/bot/fotos/bdr_lolizit.jpg`), thumbnail:fs.readFileSync(`./base de dados/lib/bot/fotos/bdr_lolizit.jpg`),sendEphemeral: true}}}
+const tob2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${bolo_de_carne}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;AKAME,;;;\nFN:JOAO,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABlabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`./base de dados/lib/bot/fotos/Pedro-Bot.jpg`), thumbnail:fs.readFileSync(`./base de dados/lib/bot/fotos/Pedro-Bot.jpg`),sendEphemeral: true}}}
 
 /** Verificado de catálogo com nome **/
 const tobCat = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})}, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": dfrply}, "title": `${bolo_de_carne}`, "description": `${bolo_de_carne}`, "currencyCode": "USD", "priceAmount1000": "2000", "retailerId": `${bolo_de_carne}`, "productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
@@ -1682,7 +1682,7 @@ return console.log('\x1b[1;31m~\x1b[1;37m>', '[', color('BAN', "red"), ']', colo
 
 /********** REGISTRO **********/
 if (isCmd && !isRegistered) {
-let contentt = fs.readFileSync(`./base de dados/lib/bot/fotos/bdr_lolizit.jpg`)
+let contentt = fs.readFileSync(`./base de dados/lib/bot/fotos/Pedro-Bot.jpg`)
 const media = await bdr.prepareMessage(from, contentt, MessageType.image, { thumbnail: null})
 let qweriio = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 const buttons1 = [

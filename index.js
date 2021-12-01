@@ -2323,10 +2323,10 @@ if (!isGroup) return enviar(linguagem.group())
 ppUrl = await bdr.getProfilePicture(from) 
 buffer = await getBuffer(ppUrl)
 infoGrupTob = `
-📛 *Nome* : ${groupName}
-👤 *Dono do Grupo* : @${from.split("-")[0]}
-👥 *Membro* : ${groupMembers.length}
-👥 *Admin* : ${groupAdmins.length}
+ *Nome* : ${groupName}
+*Dono do Grupo* : @${from.split("-")[0]}
+ *Membro* : ${groupMembers.length}
+ *Admin* : ${groupAdmins.length}
 
 ⬣ Welcome : ${isWelcome ? 'Ativado':'Desativado'}
 ⬣ Anti Link : ${isAntiLink? 'Ativado':'Desativado'}
@@ -2355,14 +2355,13 @@ ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gamb
 }
 pf = 
 `
-╭•❏ seu level
+seu level
  Nome: ${pushname}
-│Level: ${usLevel}
+Level: ${usLevel}
   XP: ${usXp}/${requirXp}
  Patente: ${patt}
  link: wa.me/${sender.split("@")[0]}
-│ Seu recado: ${teste65.status}
-╰━━━━━━─ • ─━━━━━━❋ཻུ۪۪⸙
+╰━━━━━━─ • ─━━━━━━
 `
 its = await getBuffer (ppimg)
 bdr.sendMessage(from, its, image, {quoted: mek, thumbnail:null, caption: pf, contextInfo: {mentionedJid: [sender]}})
@@ -2842,7 +2841,7 @@ rano = getRandom('.webp')
 figuger1 = `https://some-random-api.ml/canvas/triggered?avatar=${imgtrg}`
 exec(`wget ${figuger1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -2870,7 +2869,7 @@ rano = getRandom('.webp')
 anu1 = `https://api-exteam.herokuapp.com/api/rainbow?img=${imgtrg}`
 exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -2896,7 +2895,7 @@ rano = getRandom('.webp')
 figuwasted1 = `https://api-exteam.herokuapp.com/api/wasted?img=${imgtrg}`
 exec(`wget ${figuwasted1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -2923,7 +2922,7 @@ rano = getRandom('.webp')
 preso1 = `https://api-exteam.herokuapp.com/api/jail?img=${imgtrg}`
 exec(`wget ${preso1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -2951,7 +2950,7 @@ rano = getRandom('.webp')
 figuinvertida1 = `https://api-exteam.herokuapp.com/api/invert?img=${imgtrg}`
 exec(`wget ${figuinvertida1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -2977,7 +2976,7 @@ rano = getRandom('.webp')
 anu1 = `https://api-exteam.herokuapp.com/api/procurado?img=${imgtrg}`
 exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😔😔`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -3086,7 +3085,7 @@ rano = getRandom('.webp')
 anu1 = `https://api-gdr2.herokuapp.com/api/pixelate?img=${imgtrg}`
 exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -3224,7 +3223,7 @@ anu = await fetchJson(`https://www.luc4rio-rest-api.tk/api/social/play/audio?vid
 lagu = await getBuffer(anu.Link_De_Download)		
 kapabdrAqui = `💎 Título: ${anu.Titulo_Encontrado}\n👾Canal: ${anu.Link_Do_Video}\n📥 Duração: ${anu.Duracao_Do_Video}\n📝 Tamanho: ${anu.Tamanho_Do_Video}`
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
-bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${kapabdrAqui}`})
+bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${a}`})
 bdr.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', quoted: mek})
 .catch(() => enviar(`[📍] Cᴏᴍᴀɴᴅᴏ : *${comando}*\n[❗] Mᴜsɪᴄᴀ : *${q}*\n[‼️] Sɪᴛᴜᴀᴄ̧ᴀ̃ᴏ : *Erro!* \n*『Tᴇɴᴛᴇ ᴜsᴀʀ ᴏᴜᴛʀᴏ ᴘʟᴀʏ』*`))
 await requestCash(sender)
@@ -3242,13 +3241,13 @@ enviar('_[ ! ] Erro ao baixar e enviar mídia_')
 })
 enviar(`.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`)
 let thumbInfo = `❒「  *${NomeDoBot}*  」
-🎯 *Título:* ${res.all[0].title}
-📼 *ID Video:* ${res.all[0].videoId}
+ *Título:* ${res.all[0].title}
+ *ID Video:* ${res.all[0].videoId}
 📆 *Data da postagem :* ${res.all[0].ago}
-♨️ *Visualizações :* ${res.all[0].views}
+ *Visualizações :* ${res.all[0].views}
 ⏳ *Duração:* ${res.all[0].timestamp}
-📁 *Canal:* ${res.all[0].author.name}
-📊 *Link do Canal:* ${res.all[0].author.url}
+ *Canal:* ${res.all[0].author.name}
+ *Link do Canal:* ${res.all[0].author.url}
 
 *_Aguarde o processo de download....._*
 `
@@ -3409,7 +3408,7 @@ case 'estourar':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})       
 if (!isQuotedAudio) return enviar('Marque um áudio')
-enviar(`${emoji_bot} Aguarde, Adicionando efeito estorado....`)
+enviar(`${emoji_bot} Aguarde, Adicionando efeito estourado....`)
 ass = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 bas = await bdr.downloadAndSaveMediaMessage(ass)
 ran = getRandom('.mp3')
@@ -3426,7 +3425,7 @@ break
 case 'ytsearch':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
-if (args.length < 1) return enviar(`${emoji_bot} Procure de forma certa!!\nUse ${p + comando} Mc poze`)
+if (args.length < 1) return enviar(`${emoji_bot} Procure de forma certa!!\nUse ${p + comando} Musica`)
 const srch = args[0];
 try {
 var aramas = await yts(srch);
@@ -5239,7 +5238,7 @@ pru += `@${_.split('@')[0]}\n`
 }
 ban.push(`${mentioned}`)
 fs.writeFileSync('./base de dados/datauser/banned.json', JSON.stringify(ban))
-susp = `『❗』@${mentioned[0].split('@')[0]} foi banido e não poderá mais usar os comandos do bot`
+susp = `『❗』@${mentioned[0].split('@')[0]} foi banido, e não poderá mais usar os comandos do bot`
 mentions(`${susp}`, mentioned, true)   
 await requestCash(sender)
 break
@@ -5257,7 +5256,7 @@ pru += `@${_.split('@')[0]}\n`
 }
 ban.splice(`${mentioned}`)
 fs.writeFileSync('./base de dados/datauser/banned.json', JSON.stringify(ban))
-susp = `『❗』@${mentioned[0].split('@')[0]} foi desbanido e poderá novamente usar os comandos do bot`
+susp = `『❗』@${mentioned[0].split('@')[0]} foi desbanido, e poderá novamente usar os comandos do bot`
 mentions(`${susp}`, mentioned, true)   
 await requestCash(sender)
 break
@@ -5349,30 +5348,30 @@ let total = math(`${groups.length}*${privat.length}`)
 teks = `
 き⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟️❗ informações do bot❗⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟️き
 
-き⃟🐋 Velocidade : *${latensi.toFixed(4)} segundos*
-き⃟🐋 Tempo ativo : *${temporizado(uptime)}*
-き⃟🐋 Total de chats : *${totalChat.length}*
-き⃟🐋 Total de grupos : *${groups.length}*
-き⃟🐋 Total de pessoas no pv : *${privat.length}*
+ Velocidade : *${latensi.toFixed(4)} segundos*
+ Tempo ativo : *${temporizado(uptime)}*
+ Total de chats : *${totalChat.length}*
+ Total de grupos : *${groups.length}*
+ Total de pessoas no pv : *${privat.length}*
 
-き⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟️📱 informações do celular📱⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟⃟️き
+informações do celular
 
-き⃟🐥 Bateria : *${baterai}*
-き⃟🐥 Carregando : *${charge}*
-き⃟🐥 Uso da ram : *${ram2}*
-き⃟🐥 Plataforma : *${os.platform()}*
-き⃟🐥 Nome do host : *${os.hostname()}*
-き⃟🐥 Versão do celular : *${bdr.user.phone.os_version}*
-き⃟🐥 Tempo de atividade : *${temporizado(os.uptime())}*
-き⃟🐥 Versão do whatsapp : *${bdr.user.phone.wa_version}*
-き⃟🐥 Modelo do dispositivo : *${bdr.user.phone.device_model}*`
+ Bateria : *${baterai}*
+ Carregando : *${charge}*    
+ Uso da ram : *${ram2}*
+ Plataforma : *${os.platform()}*
+ Nome do host : *${os.hostname()}*
+ Versão do celular : *${bot.user.phone.os_version}*
+ Tempo de atividade : *${temporizado(os.uptime())}*
+ Versão do whatsapp : *${bot.user.phone.wa_version}*
+ Modelo do dispositivo : *${bot.user.phone.device_model}*`
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${teks}`})
 await requestCash(sender)
 break
 
 case 'delchat':
-if (!isOwner) return enviar(`Macaco 😡`)
+if (!isOwner) return enviar(`Macac`)
 enviar('Pronto papai, deletei esse chat')
 console.log(from)
 bdr.modifyChat(from, "delete", {includeStarred: false})
@@ -6015,7 +6014,7 @@ const buyPacks = valorPack * payout2
 if ( checkATMuser(sender) <= buyPacks) return enviar(`[❗] Desculpe ${pushname} você não tem dinhero suficiente\nvalor do premiun : ${valorPack} mil`)
 if ( checkATMuser(sender) >= buyPacks) {
 confirmATM(sender)
-var pornoBybdr = [
+var pornoBy = [
 "Michelle Rabbit\nhttps://mega.nz/folder/FXB0ELpS#CaCYgD8f8YNPc_dL4JjtDA ",
 "Dripxxx\nhttps://mega.nz/folder/UdEjxYbA#2dGzAJq9JR8Qy8C8Y3VirQ",
 "Sia Sibéria\nhttps://drive.google.com/drive/u/0/mobile/folders/1pOfYV7ZFqumnZpB-6eu03fHsByBJgNWt",

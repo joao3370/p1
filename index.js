@@ -996,7 +996,7 @@ bdr.on('chat-update', async (mek) => {
   const isBotk = numberBot.includes(sender)
   
   /************** VERIFICADO CONST ************/
-  const dfrply = fs.readFileSync('./base de dados/lib/bot/fotos/Pedro-Bot.jpg.jpg')
+  const dfrply = fs.readFileSync('./base de dados/lib/bot/fotos/Pedro-Bot.jpg')
 
 /************** PUSHNAME (NOME) ************/
   const conts = mek.key.fromMe ? bdr.user.jid : bdr.contacts[sender] || { notify: jid.replace(/@.+/, '') }

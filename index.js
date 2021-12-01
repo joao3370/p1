@@ -67,7 +67,7 @@ let palavra = JSON.parse(fs.readFileSync('./base de dados/lib/palavras.json'))
 let _informe = JSON.parse(fs.readFileSync('./base de dados/lib/informe.json'));
 let _solicitar = JSON.parse(fs.readFileSync('./base de dados/lib/solicitar.json'));
 let scommand = JSON.parse(fs.readFileSync('./base de dados/lib/scommand.json'))
-img2 = fs.readFileSync("./base de dados/lib/bot/fotos/bdr_lolizit.jpg");
+img2 = fs.readFileSync("./base de dados/lib/bot/fotos/Pedro-Bot.jpg");
 
 /********** CONFIGURAÇÕES **********/
 const infos = JSON.parse(fs.readFileSync('./configure aqui.js'))

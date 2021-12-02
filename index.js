@@ -1919,7 +1919,7 @@ const antilink_by_bdr = isAntiLink ? 'Ativado' : 'Desativado'
 const welcome_by_bdr = isWelcome ? 'Ativado' : 'Desativado'
 const levelingon_by_bdr = isLevelingOn ? 'Ativado' : 'Desativado'
 const selfchat_by_bdr = isAutconversa ? 'Ativado' : 'Desativado'
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/MenuFT.jpg')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/MenuFT.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: help(p, hr, pushname, prema, checATM, useLevel, useXp, requireXp, patt, bateria, chatss, antilink_by_bdr, welcome_by_bdr, levelingon_by_bdr, antifaker_by_bdr, selfchat_by_bdr)})
 await requestCash(sender)
 break
@@ -1930,7 +1930,7 @@ if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quote
 if (!isGroup) return enviar(linguagem.group())
 const total_gp1 = `${totalchat.length}`
 const grupo_by_bdr = (linguagem.menu2(pushname, hr, total_gp1, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/GrupoFT.jpg')              
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/GrupoFT.mp4')              
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: grupo_by_bdr})
 await requestCash(sender)
 break
@@ -3648,7 +3648,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 const total_gp5 = `${totalchat.length}`
 const jogos_by_bdr = (linguagem.jogos(pushname, hr, total_gp5, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/JogosFT.jpg')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/JogosFT.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: jogos_by_bdr})
 await requestCash(sender)
 break

@@ -1930,7 +1930,7 @@ if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quote
 if (!isGroup) return enviar(linguagem.group())
 const total_gp1 = `${totalchat.length}`
 const grupo_by_bdr = (linguagem.menu2(pushname, hr, total_gp1, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/Grupo.jpg')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/GrupoFT.jpg')              
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: grupo_by_bdr})
 await requestCash(sender)
 break

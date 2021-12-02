@@ -1,5 +1,7 @@
 ## Olá, eu sou o Joao <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px">
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%237C35F7&lines=Fa%C3%A7a+bom+uso+dos+arquivos.;Qualquer+d%C3%BAvida%2C+entre+em+contato.)](https://git.io/typing-svg)
+
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
 

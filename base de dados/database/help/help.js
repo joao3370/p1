@@ -21,9 +21,12 @@ const help = (p, hr, pushname, prema, checATM, useLevel, useXp, requireXp, patt,
 ╠⋟ ᬊ𝑷𝑨𝑻𝑬𝑵𝑻𝑬ᬊ: ${patt}                        
 ╠═════ 🇧🇷 ══════
  🇧🇷͜͡𝑴𝑬𝑵𝑼𝑺 ͜͡🇧🇷
- 
-25teste teste
-
+╭─⊷❲ VOTING ❳
+├ ${p}voting <text>
+├ ${p}delvote
+├ ${p}cekvote
+├ ${p}vote
+├ ${p}devote
 ╠↱ ${p}𝑷𝒍𝒂𝒚𝒓𝒔
 ║════════════
 ║↱ ${p}𝑮𝒓𝒖𝒑𝒐

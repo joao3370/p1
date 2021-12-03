@@ -75,6 +75,12 @@ var {p, emoji_bot, SeuNome, OwnerNumber, NomeDoBot} = infos
  
 macarrão = 'Ikyy69' //Pra qm quiser 😁
 
+/******************\
+if (selectedButton == `Menu?`) {
+if (isUser) return enviar(`.menu`)
+
+/*******************\
+
 /********** CONST, (N MEXA AQUI) **********/
 const blocked = []; 
 aaa = 'on'

@@ -30,12 +30,6 @@ const help = (p, hr, pushname, prema, checATM, useLevel, useXp, requireXp, patt,
 ║╰════════════
 ║↱ ${p}𝑵𝒖𝒗𝒆𝒎 📁
 ║════════════
-${p}voting <text>
-{p}delvote
-{p}cekvote
-{p}devote
-
-
 ║ ↱ ${p}𝑰𝒏𝒇𝒐𝒃𝒐𝒕 📃
 ║════════════
 ║↱ ${p}𝑨𝒏𝒊𝒎𝒆𝒔  ♨️

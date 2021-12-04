@@ -2071,6 +2071,121 @@ bdrzinhokkkk = mek.message.extendedTextMessage.contextInfo.participant
 enviar(`Esse membro *@${a.split('@')[0]}*... agora é admintrador`)
 break
 
+  case 'voting':
+   if(!isGroup) return m.reply(msg.group)
+   if(!isAdmins) return m.reply(msg.admin)
+   if(!value) return m.reply(msg.notext)
+   client.vote = client.vote ? client.vote : {}
+    if (from in client.vote) {
+        await m.reply(msg.main('Voting'))
+        return false
+    }
+    caption = `VOTING
+
+Reason : ${value}
+
+${prefix}vote untuk vote
+${prefix}devote untuk devote`
+    client.vote[from] = [
+        await client.send2Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'Devote', false, { contextInfo:{
+          mentionedJid: client.parseMention(caption)
+        }}),
+        [],
+        [],
+        value,
+    ]
+    break
+
+ case 'hapusvote':
+ case 'delvote':
+   if(!isGroup) return m.reply(msg.group)
+   if(!isAdmins) return m.reply(msg.admin)
+    if (!(from in client.vote)) {
+        await m.reply(msg.nomain('Voting'))
+        return false
+    }
+    delete client.vote[from]
+    m.reply(msg.hapus('Voting'))
+    break
+
+ case 'vote':
+   if(!isGroup) return m.reply(msg.group)
+   if (!(from in client.vote)) {
+       m.reply(msg.nomain('Voting'))
+       return false
+    }
+    vote = client.vote[from][1]
+    devote = client.vote[from][2]
+    inVote = vote.includes(sender)
+    inDevote = devote.includes(sender)
+    if (inVote) return m.reply(msg.inmain('Voting'))
+    if (inDevote) return m.reply(msg.inmain('Voting'))
+    vote.push(sender)
+    listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
+    listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
+        caption = `VOTING
+
+REASON : ${client.vote[from][3]}
+
+VOTE : ${vote.length}
+${listVote}
+
+DEVOTE : ${devote.length}
+${listDevote}`.trim()
+    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Cek Voting', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    break
+
+ case 'devote':
+   if(!isGroup) return m.reply(msg.group)
+   if (!(from in client.vote)) {
+       m.reply(msg.nomain('Voting'))
+       return false
+    }
+    vote = client.vote[from][1]
+    devote = client.vote[from][2]
+    inVote = vote.includes(sender)
+    inDevote = devote.includes(sender)
+    if (inVote) return m.reply(msg.inmain('Voting'))
+    if (inDevote) return m.reply(msg.inmain('Voting'))
+    devote.push(sender)
+    listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
+    listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
+        caption = `VOTING
+
+REASON : ${client.vote[from][3]}
+
+VOTE : ${vote.length}
+${listVote}
+
+DEVOTE : ${devote.length}
+${listDevote}`.trim()
+    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Cek Voting', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+    break
+
+
+ case 'cekvote':
+   if(!isGroup) return m.reply(msg.group)
+   if(!isAdmins) return m.reply(msg.admin)
+   if (!(from in client.vote)) {
+        await m.reply(msg.nomain('Voting'))
+        throw false
+    }
+    vote = client.vote[from][1]
+    devote = client.vote[from][2]
+    listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
+    listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
+    caption = `RESULT VOTING
+
+REASON : ${client.vote[from][3]}
+
+VOTE : ${vote.length}
+${listVote}
+
+Devote : ${devote.length}
+${listDevote}`.trim()
+    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Hapus Voting', prefix + 'delvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
+break
+  
 case 'demote':
 if (!isGroup) return enviar(linguagem.group())
 if (!isGroupAdmins) return enviar(linguagem.admin())

@@ -1928,20 +1928,8 @@ const selfchat_by_bdr = isAutconversa ? 'Ativado' : 'Desativado'
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/MenuFT.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: help(p, hr, pushname, prema, checATM, useLevel, useXp, requireXp, patt, bateria, chatss, antilink_by_bdr, welcome_by_bdr, levelingon_by_bdr, antifaker_by_bdr, selfchat_by_bdr)})
 await requestCash(sender)
-buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'Menu'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1}]
-
-
-               imageMsg = (await xeon.prepareMessageMedia(fs.readFileSync(`./base de dados/lib/bot/fotos/login.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./base de dados/lib/bot/fotos/login.jpg`)})).imageMessage
-
-               buttonsMessage = {
-               contentText: `${txtt}`,
-               footerText: `Pedro-Bot`, imageMessage: imageMsg,
-               buttons: buttons,
-               headerType: 4,
-               break
-                
+  break    
+  
 case 'grupo':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})

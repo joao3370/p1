@@ -110,7 +110,7 @@ Ola ${pushname} Td Bem?
 
 exports.figurinhas = (pushname, hr, total_gp2, bateria) => {
 return `
-Salve ${pushname} Seu Lindo
+ola ${pushname} Td Bem?
 ┌═══════════════
 ╰╮🖼ɪɴғᴏ ᴅᴏ ʙᴏᴛ🔥᭄
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -188,7 +188,7 @@ Salve ${pushname} Seu Lindo
 
 exports.playrs = (pushname, hr, total_gp4, bateria) => {
 return `
-Salve ${pushname} Seu Lindo
+ol ${puashname} Td Bem?
 ┌═══════════════⊷
 ╰╮🗂ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -253,7 +253,7 @@ Salve ${pushname} Seu Lindo
 
 exports.jogos = (pushname, hr, total_gp5, bateria) => {
 return `
-Salve ${pushname} Seu Lindo
+ola ${pushname} Td Bem?
 ┌═══════════════⊷
     📁ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -323,7 +323,7 @@ Salve ${pushname} Seu Lindo
 
 exports.animes = (pushname, hr, total_gp6, bateria) => {
 return `
- Salve ${pushname} Seu Lindo
+ ola ${pushname} Td Bem?
 ┌═══════════════⊷
 ╰╮ 📁ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -477,7 +477,7 @@ return `
 
 exports.dono = (pushname, hr, total_gp7, bateria) => {
 return `
- Salve ${pushname} Seu Lindo
+ ola ${pushname} Td Bem?
 ┌═══════════════⊷
 ╰╮🌻ɪɴғᴏ ᴅᴏ ʙᴏᴛ🔥᭄
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -544,7 +544,7 @@ return `
 
 exports.nuvem = (pushname, hr, total_gp4, bateria) => {
 return `
- Salve ${pushname} Seu Lindo
+ ola ${pushname} Td Bem?
 ┌═══════════════
 ╰╮🌎ɪɴғᴏ ᴅᴏ ʙᴏ🔥᭄
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -602,7 +602,7 @@ return `
 
 exports.premium = (pushname, hr, totalchat, bateria) => {
 return `
- Salve ${pushname} Seu Lindo
+ ola ${pushname} Td Bem?
 ┌═══════════════
 ╰╮💻ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -655,7 +655,7 @@ return `
 
 exports.bankloja = (pushname, hr, totalchat, bateria) => {
 return `
- Salve ${pushname} Seu Lindo
+ ola ${pushname} Td Bem?
 ┌═══════════════
 ╰  🗞ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -711,7 +711,7 @@ return `
 
 exports.info = (pushname, hr, totalchat, bateria) => {
 return `
- Salve ${pushname} Seu Lindo
+ ola ${pushname} Td Bem?
 ┌═══════════════
 ╰   🏷 ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
@@ -772,7 +772,7 @@ exports.tterro = () => {
 return `Você deve digitar ${p}ppt pedra, ${p}ppt papel ou ${p}ppt tesoura`
 }
 
-exports.ban = (NomeDoBot) => {
+exports.ban = (bot) => {
 return`${emoji_bot} Você está banido do bot`
 }
 

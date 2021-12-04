@@ -2066,7 +2066,7 @@ if (!isGroupAdmins) return enviar(linguagem.admin())
 if (!isBotGroupAdmins) return stickerAdm(from)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return enviar('Marque uma mensagem do alvo!')
 promoverGay = mek.message.extendedTextMessage.contextInfo.participant
-bdr.groupMakeAdmin(from, [promoverGay])
+pedro.groupMakeAdmin(from, [promoverGay])
 bdrzinhokkkk = mek.message.extendedTextMessage.contextInfo.participant
 enviar(`Esse membro *@${a.split('@')[0]}*... agora é admintrador`)
 break
@@ -5764,7 +5764,7 @@ case 'github':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})   
 if (!isOwner && !isPremium) return webPage(semPremium(p))
-if (args.length == 0) return enviar(`_*Sintaxe de nome incorreto...*_\n\nExemplo: ${p + comando} bdrzinho`)
+if (args.length == 0) return enviar(`_*Sintaxe de nome incorreto...*_\n\nExemplo: ${p + comando} pedro`)
 anu = await fetchJson(`https://www.luc4rio-rest-api.tk/api/social/github?nomedeusuario=${q}`)
 githubBybdr = `
 🏷️ Nome : ${anu.Nome_De_Usuario}
@@ -5779,7 +5779,7 @@ githubBybdr = `
 *${anu.Link_Do_Repositorios}*
 `
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
-bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${githubBybdr}`})
+bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${githubBybot}`})
 await requestCash(sender)
 break
 

@@ -1915,6 +1915,8 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
 bdr.updatePresence(from, Presence.composing)
 uptime = process.uptime()
+const buttons1 = [
+{buttonId: 'Menu', buttonText: {displayText: 'Menu'}, type: 1},
 const checATM = checkATMuser(sender)
 const useLevel = getLevelingLevel(sender)
 const useXp = getLevelingXp(sender)

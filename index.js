@@ -818,7 +818,7 @@ bdr.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageTyp
 }, 1000)
 } else if (res == "3") {
 res = mett[Math.floor(Math.random() * mett.length)]
-teks = `${tempoBybdr} @${num.split('@')[0]} ... Para permanecer neste grupo, veja a imagem acima e diga qual é o nome do anime! 🤝🏼`
+teks = `${tempoBybdr} @${num.split('@')[0]} ... Para permanecer neste grupo, veja a imagem acima e diga qual é o nome do anime!`
 
 fotosAnime = ["1", "2", "3", "4", "5"]
 ramdomRes = fotosAnime[Math.floor(Math.random() * fotosAnime.length)]

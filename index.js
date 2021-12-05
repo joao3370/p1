@@ -835,12 +835,12 @@ num = anu.participants[0]
 try {
 ppimg = await bdr.getProfilePicture(`${num.split('@')[0]}@c.us`)
 } catch {
-ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+ppimg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd96wdvMs3WX-yBhMyScdf8hxx9gZGMwXL-w&usqp=CAU'
 }
 mett = ["1", "2"] 
 res = mett[Math.floor(Math.random() * mett.length)]
 if (res == "1") {
-teks = `Adeus @${num.split('@')[0]}, você foi ou seria um excelente membro.`
+teks = `Adeus @${num.split('@')[0]}, você foi excelente membro.`
 result = fs.readFileSync(`./src/welcometeste1.jpeg`)
 bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
 } else if (res == "2") {
@@ -1708,7 +1708,7 @@ return
 
 /********** LOGIN **********/
 if (selectedButton == `Rg`) {
-if (isUser) return enviar(`📌 *Você já está registrado*`)
+if (isUser) return enviar(´📁 *Você já está registrado*`)
 const namaUser = q.substring(0, q.indexOf('/') - 0)
 const serialUser = createSerial(20)
 enviar('『⏳』Esᴘᴇʀᴇ ᴏ ᴘʀᴏᴄᴇssᴀᴍᴇɴᴛᴏ ᴅᴏ sᴇᴜ ʟᴏɢɪɴ')

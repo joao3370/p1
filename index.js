@@ -1708,7 +1708,7 @@ return
 
 /********** LOGIN **********/
 if (selectedButton == `Rg`) {
-if (isUser) return enviar(´📁*Você já está registrado*`)
+if (isUser) return enviar(`📌 Você já está registrado`)
 const namaUser = q.substring(0, q.indexOf('/') - 0)
 const serialUser = createSerial(20)
 enviar('『⏳』Esᴘᴇʀᴇ ᴏ ᴘʀᴏᴄᴇssᴀᴍᴇɴᴛᴏ ᴅᴏ sᴇᴜ ʟᴏɢɪɴ')

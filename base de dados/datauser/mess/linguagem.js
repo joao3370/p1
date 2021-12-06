@@ -848,7 +848,7 @@ return`
 
 💰 *${comando}*: *-1 CASH*
 
-📍 Entendido! Guenta aê! ... ⏳`
+📍 Entendido! Guenta aê!⏳`
 }
 
 exports.erro = () => {

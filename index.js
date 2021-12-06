@@ -858,7 +858,7 @@ console.log('Error : %s', color(e, 'red'))
 
 bdr.on('group-update', async (anu) => {
 falfa = {key: {fromMe: false,participant: "0@s.whatsapp.net",
-remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Lolizita", "caption": `${NomeDoBot}`}}}
+remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "a", "caption": `${NomeDoBot}`}}}
 const grupoAbertoBybdr = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 *❗GRUPO ABERTO❗* 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
 const grupoFechadoBybdr = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 *❗GRUPO FECHADO❗* 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
 const alteraçãoDaDescrição = {text: 'oi', "forwardingScore": 1000000000, "externalAdReply": {"title": `「 *❗DESCRIÇÃO ALTERADA❗* 」`,"body": "","previewType": "PHOTO","thumbnailUrl": "","thumbnail": img2}}
@@ -1181,7 +1181,7 @@ var replys_loli= replys[Math.floor(Math.random() * replys.length)]
 
 /********** MESS && PTBR **********/
 mess = {
-espere: `${replys_loli}`,
+espere: `${replys_pedro}`,
 success: '『⏳』Sucesso',
 error: {
 stick: '『❗』 Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
@@ -1418,10 +1418,10 @@ leveis: "❌ _*...Leveis não está ativado...*_❌",
 
 /********** VERIFICADOS **********/
 /** Verificado com o nome bom dia **/
-const tob = { key: {fromMe: false,participant: "0@s.whatsapp.net", remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Lolizita", "caption": `${tempo}`}}}
+const tob = { key: {fromMe: false,participant: "0@s.whatsapp.net", remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "pedro", "caption": `${tempo}`}}}
 
 /** Verificado com o nome ohayo **/
-const tob1 = { key: {fromMe: false,participant: "0@s.whatsapp.net", remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Lolizita", "caption": `${bolo_de_carne}`}}}
+const tob1 = { key: {fromMe: false,participant: "0@s.whatsapp.net", remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "pedro", "caption": `${bolo_de_carne}`}}}
 
 /** Verificado com o nome e foto **/
 const tob2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${bolo_de_carne}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;AKAME,;;;\nFN:JOAO,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABlabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`./base de dados/lib/bot/fotos/Pedro-Bot.jpg`), thumbnail:fs.readFileSync(`./base de dados/lib/bot/fotos/Pedro-Bot.jpg`),sendEphemeral: true}}}
@@ -2550,123 +2550,6 @@ break
 
 //<~FIM DOS COMANDOS EM GRUPOS
 
-  //<~COMEÇO DOS COMANDOS VOTING
-  case 'voting':
-   if(!isGroup) return m.reply(msg.group)
-   if(!isAdmins) return m.reply(msg.admin)
-   if(!value) return m.reply(msg.notext)
-   client.vote = client.vote ? client.vote : {}
-    if (from in client.vote) {
-        await m.reply(msg.main('Voting'))
-        return false
-    }
-    caption = `VOTING
-
-Reason : ${value}
-
-${prefix}vote untuk vote
-${prefix}devote untuk devote`
-    client.vote[from] = [
-        await client.send2Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'Devote', false, { contextInfo:{
-          mentionedJid: client.parseMention(caption)
-        }}),
-        [],
-        [],
-        value,
-    ]
-    break
-
- case 'hapusvote':
- case 'delvote':
-   if(!isGroup) return m.reply(msg.group)
-   if(!isAdmins) return m.reply(msg.admin)
-    if (!(from in client.vote)) {
-        await m.reply(msg.nomain('Voting'))
-        return false
-    }
-    delete client.vote[from]
-    m.reply(msg.hapus('Voting'))
-    break
-
- case 'vote':
-   if(!isGroup) return m.reply(msg.group)
-   if (!(from in client.vote)) {
-       m.reply(msg.nomain('Voting'))
-       return false
-    }
-    vote = client.vote[from][1]
-    devote = client.vote[from][2]
-    inVote = vote.includes(sender)
-    inDevote = devote.includes(sender)
-    if (inVote) return m.reply(msg.inmain('Voting'))
-    if (inDevote) return m.reply(msg.inmain('Voting'))
-    vote.push(sender)
-    listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-    listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-        caption = `VOTING
-
-REASON : ${client.vote[from][3]}
-
-VOTE : ${vote.length}
-${listVote}
-
-DEVOTE : ${devote.length}
-${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Cek Voting', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
-    break
-
- case 'devote':
-   if(!isGroup) return m.reply(msg.group)
-   if (!(from in client.vote)) {
-       m.reply(msg.nomain('Voting'))
-       return false
-    }
-    vote = client.vote[from][1]
-    devote = client.vote[from][2]
-    inVote = vote.includes(sender)
-    inDevote = devote.includes(sender)
-    if (inVote) return m.reply(msg.inmain('Voting'))
-    if (inDevote) return m.reply(msg.inmain('Voting'))
-    devote.push(sender)
-    listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-    listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-        caption = `VOTING
-
-REASON : ${client.vote[from][3]}
-
-VOTE : ${vote.length}
-${listVote}
-
-DEVOTE : ${devote.length}
-${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Cek Voting', prefix + 'cekvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
-    break
-
-
- case 'cekvote':
-   if(!isGroup) return m.reply(msg.group)
-   if(!isAdmins) return m.reply(msg.admin)
-   if (!(from in client.vote)) {
-        await m.reply(msg.nomain('Voting'))
-        throw false
-    }
-    vote = client.vote[from][1]
-    devote = client.vote[from][2]
-    listVote = vote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-    listDevote = devote.map((v, i) => `${i + 1}.  @${v.split`@`[0]}`).join('\n')
-    caption = `RESULT VOTING
-
-REASON : ${client.vote[from][3]}
-
-VOTE : ${vote.length}
-${listVote}
-
-Devote : ${devote.length}
-${listDevote}`.trim()
-    await client.send3Button(from, caption, isWm, 'Vote', prefix + 'vote', 'Devote', prefix + 'devote', 'Hapus Voting', prefix + 'delvote', false, { contextInfo: { mentionedJid: client.parseMention(caption) } })
-break
-//<~FIM DOS COMANDOS VOTING
-  
 //<~COMEÇO DOS COMANDOS STICKERS
 case 'figurinhas':
 addFilter(from)
@@ -5813,7 +5696,7 @@ enviar(mess.espere)
 teks = args.join(' ')
 if (!q) return enviar(`${emoji_bot} Use apenas a sigla do estado e, apenas uma sigla por consulta`)
 anu = await fetchJson(`https://www.luc4rio-rest-api.tk/api/consultas/covid/brasil?estado=${q}`)
-const by_bdr_thiago = `
+const by_pedro = `
 ╭═══════════════⊷
 ╰╮✙◗ 𝖢𝗈𝗏𝗂𝖽 𝖬𝗎𝗇𝖽𝗈 
 ╭┤➩ Sigla do estado: ${anu.Sigla_Do_Estado}

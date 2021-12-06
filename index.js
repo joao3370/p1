@@ -808,7 +808,7 @@ setTimeout( () => {
 result = fs.readFileSync(`./base de dados/database/figurinhas/welcomeBybdr1.webp`)
 bdr.sendMessage(mdata.id, result, MessageType.sticker)
 }, 1000
- } else if (res == "2") {
+} else if (res == "2") {
 res = mett[Math.floor(Math.random() * mett.length)]
 teks = `${tempoBybdr} @${num.split('@')[0]} ...! `
 result = fs.readFileSync(`./base de dados/lib/bot/fotos/welcomeBybdr.jpeg`)

@@ -96,7 +96,7 @@ const limitawal = 30
 /********** VCARD DO DONO **********/
 const vcard = `BEGIN:VCARD\n`
 + `VERSION:3.0\n`
-+ `FN:bdr\n`
++ `FN:pedro\n`
 + `ORG:bdr-BOT;\n` 
 + `TEL;type=CELL;type=VOICE;waid=5548988062654:+55 48 98806-2654\n` 
 + `END:VCARD`
@@ -808,26 +808,6 @@ setTimeout( () => {
 result = fs.readFileSync(`./base de dados/database/figurinhas/welcomeBybdr1.webp`)
 bdr.sendMessage(mdata.id, result, MessageType.sticker)
 }, 1000)
-} else if (res == "2") {
-res = mett[Math.floor(Math.random() * mett.length)]
-teks = `${tempoBybdr} @${num.split('@')[0]} ... Para permanecer neste grupo, veja a imagem acima e diga o que você vê! `
-result = fs.readFileSync(`./base de dados/lib/bot/fotos/welcomeBybdr.jpeg`)
-bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
-setTimeout( () => {
-bdr.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
-}, 1000)
-} else if (res == "3") {
-res = mett[Math.floor(Math.random() * mett.length)]
-teks = `${tempoBybdr} @${num.split('@')[0]} ... Para permanecer neste grupo, veja a imagem acima e diga qual é o nome do anime!`
-
-fotosAnime = ["1", "2", "3", "4", "5"]
-ramdomRes = fotosAnime[Math.floor(Math.random() * fotosAnime.length)]
-result = fs.readFileSync(`./base de dados/lib/bot/fotos/animeBybdr` + ramdomRes + `.png`)
-bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
-setTimeout( () => {
-bdr.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
-}, 1000)
-}
  //ENTRADA FIM
 
 } else if (anu.action == 'remove') {

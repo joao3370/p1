@@ -125,6 +125,8 @@ ola ${pushname} Td Bem?
 ┃│⚠︎ Tudo com : *<gif/foto>*
 ┃╰━━━━━━❏━━━━━━
 ❏│ ${p}F 『Foto/Gif』
+
+   ${p}ffig 『Foto/Gif』
 ┃╰━━━━━━❏━━━━━━
 ❏│ ${p}St 『Foto/Gif』
 ┃╰━━━━━━❏━━━━━━

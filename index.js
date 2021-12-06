@@ -807,7 +807,27 @@ bdr.sendMessage(mdata.id, buff, MessageType.image, {thumbnail:null, caption: tek
 setTimeout( () => {
 result = fs.readFileSync(`./base de dados/database/figurinhas/welcomeBybdr1.webp`)
 bdr.sendMessage(mdata.id, result, MessageType.sticker)
+}, 1000
+ } else if (res == "2") {
+res = mett[Math.floor(Math.random() * mett.length)]
+teks = `${tempoBybdr} @${num.split('@')[0]} ...! `
+result = fs.readFileSync(`./base de dados/lib/bot/fotos/welcomeBybdr.jpeg`)
+bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
+setTimeout( () => {
+bdr.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
 }, 1000)
+} else if (res == "3") {
+res = mett[Math.floor(Math.random() * mett.length)]
+teks = `${tempoBybdr} @${num.split('@')[0]} ... ulala!`
+
+fotosAnime = ["1", "2", "3", "4", "5"]
+ramdomRes = fotosAnime[Math.floor(Math.random() * fotosAnime.length)]
+result = fs.readFileSync(`./base de dados/lib/bot/fotos/animeBybdr` + ramdomRes + `.png`)
+bdr.sendMessage(mdata.id, result, MessageType.image, {thumbnail:null, caption: teks})
+setTimeout( () => {
+bdr.sendMessage(mdata.id, `Fala alguma coisa, @${num.split('@')[0]}`, MessageType.text)
+}, 1000)
+}          
  //ENTRADA FIM
 
 } else if (anu.action == 'remove') {

@@ -1176,12 +1176,12 @@ randomTTTXP = Math.floor(Math.random() * 200) + 200
 addLevelingXp(randomTTTXP)
 
 /********** MENSAGENS DO BOT **********/
-var replys = [`Okay oni chan, espere, estou processando os dados...`, `⏳Aguarde alguns instantes...⏳\n\nCaso não funcione, use o comando novamente.`, `Espere... Caso não funcione, use o comando novamente.`, `Calmae, estou fazendo...`, `Por enquanto que estou processando...`, `Aguarde... Por enquanto espere`]
+var replys = [`Okay, espere, estou processando...`, `⏳Aguarde alguns instantes...⏳\n\nCaso não funcione, use o comando novamente.`, `Espere... Caso não funcione, use o comando novamente.`, `Calmae, estou fazendo...`, `Por enquanto que estou processando...`, `Aguarde... Por enquanto espere`]
 var replys_loli= replys[Math.floor(Math.random() * replys.length)] 
 
 /********** MESS && PTBR **********/
 mess = {
-espere: `${replys_pedro}`,
+espere: `${replys_loli}`,
 success: '『⏳』Sucesso',
 error: {
 stick: '『❗』 Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',

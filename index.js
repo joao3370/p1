@@ -1926,6 +1926,7 @@ const antilink_by_bdr = isAntiLink ? 'Ativado' : 'Desativado'
 const welcome_by_bdr = isWelcome ? 'Ativado' : 'Desativado'
 const levelingon_by_bdr = isLevelingOn ? 'Ativado' : 'Desativado'
 const selfchat_by_bdr = isAutconversa ? 'Ativado' : 'Desativado'
+const buttons1 = [{buttonId: 'Menu', buttonText: {displayText: '.menu'},
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/MenuFT.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: help(p, hr, pushname, prema, checATM, useLevel, useXp, requireXp, patt, bateria, chatss, antilink_by_bdr, welcome_by_bdr, levelingon_by_bdr, antifaker_by_bdr, selfchat_by_bdr)})
 await requestCash(sender)

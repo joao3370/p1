@@ -5710,7 +5710,7 @@ const by_pedro = `
 ┃╰═════════════⊷
 ╰══════「★」═════⊷`
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
-bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${by_bdr_thiago}`})
+bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${by_pedro}`})
 await requestCash(sender)
 break
 

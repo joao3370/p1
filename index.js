@@ -3679,6 +3679,17 @@ d.push(groupMembers[r].jid)
 }
 mentions(teks, d, true)
 break
+  
+case 'mamada':
+d = []
+teks = `deu uma *${comando}* gostosa : `
+for(i = 0; i < 1; i++) {
+r = Math.floor(Math.random() * groupMetadata.participants.length + 0)
+teks += `@${groupMembers[r].jid.split('@')[0]}\n`
+d.push(groupMembers[r].jid)
+}
+mentions(teks, d, true)
+break
 
 case 'amongus':
 addFilter(from)

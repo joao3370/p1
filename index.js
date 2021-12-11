@@ -884,16 +884,6 @@ bdr.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: alteraçãoDaD
 console.log(anu)
 }
 })
-  
-/********** FUCTION ANTI CALL **********/
-bdr.on('CB:action,,call', async json => {
-const callerId = json[2][0][1].from;
-console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32m LIGAÇÃO DETECTADA LIGAÇÕES = BLOCK \x1b[1;37m]')
-bdr.sendMessage(callerId, `${emoji_bot} Ligações = block`, MessageType.text)
-setTimeout(async() => {
-await bdr.blockUser(callerId, "add")
-}, 3000)
-})
 
 /********** FUCTION BATERIA **********/
 bdr.on('CB:action,,battery', json => {

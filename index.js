@@ -1693,8 +1693,7 @@ const media = await bdr.prepareMessage(from, contentt, MessageType.image, { thum
 let qweriio = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 const buttons1 = [
 {buttonId: 'Rg', buttonText: {displayText: 'Ξ Registrar'}, type: 1},
- {buttonId:`menu`,buttonText:{displayText:'.menu'},type:1},
- 
+
 ]
 
 const btn1 = {
@@ -1722,14 +1721,14 @@ var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-
 buff = await getBuffer(ppimg)
 const tekentod = 
 `
-╭Registro
+ Registro
  REGISTRADO(A)
-│ɪᴅ: ${serialUser}
+ ɪᴅ: ${serialUser}
  • Rᴇɢɪsᴛʀᴏ com sᴜᴄᴇᴅɪᴅᴏ!!
-│⏳ʜᴏʀᴀʀɪᴏ: ${time}
+ ⏳ʜᴏʀᴀʀɪᴏ: ${time}
 ɴᴏᴍᴇ: ${pushname}
 ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
-╰━━━━━━─ • ─━━━━━━❋ཻུ۪۪⸙
+╰━━━━━━─ • ─━━━━━━
 `            
 veri = sender
 if (isGroup) {
@@ -1758,14 +1757,14 @@ var ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-
 buff = await getBuffer(ppimg)
 const tekentod = 
 `
-╭Registro
+ Registro
  REGISTRADO(A)
-│ɪᴅ: ${serialUser}
+ ɪᴅ: ${serialUser}
  Rᴇɢɪsᴛʀᴏ com sᴜᴄᴇᴅɪᴅᴏ!!
-│⏳ʜᴏʀᴀʀɪᴏ: ${time}
+ ⏳ʜᴏʀᴀʀɪᴏ: ${time}
 ɴᴏᴍᴇ: ${pushname}
-│ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
-╰━━━━━━─ • ─━━━━━━❋ཻུ۪۪⸙
+ ɴᴜᴍᴇʀᴏ: wa.me/${sender.split('@')[0]}
+╰━━━━━━─ • ─━━━━━━
 `            
 veri = sender
 if (isGroup) {
@@ -1976,7 +1975,7 @@ break
 case 'add':
 try {
 if (!isGroup) return enviar("Somente em grupos!")
-if (!isGroupAdmins && !isOwner && !mek.key.fromMe) return enviar("Não hmmmm")  
+if (!isGroupAdmins && !isOwner && !mek.key.fromMe) return enviar("Não hmm")  
 if (!isBotGroupAdmins) return enviar(`Tornar bot como administrador de grupo!`)
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) {
 entah = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
@@ -6032,7 +6031,7 @@ const buyPacks = valorPack * payout2
 if ( checkATMuser(sender) <= buyPacks) return enviar(`[❗] Desculpe ${pushname} você não tem dinhero suficiente\nvalor do premiun : ${valorPack} mil`)
 if ( checkATMuser(sender) >= buyPacks) {
 confirmATM(sender)
-var pornoBybdr = [
+var porno = [
 "Michelle Rabbit\nhttps://mega.nz/folder/FXB0ELpS#CaCYgD8f8YNPc_dL4JjtDA ",
 "Dripxxx\nhttps://mega.nz/folder/UdEjxYbA#2dGzAJq9JR8Qy8C8Y3VirQ",
 "Sia Sibéria\nhttps://drive.google.com/drive/u/0/mobile/folders/1pOfYV7ZFqumnZpB-6eu03fHsByBJgNWt",
@@ -6098,8 +6097,8 @@ var pornoBybdr = [
 "Dripxxx\nhttps://mega.nz/folder/UdEjxYbA#2dGzAJq9JR8Qy8C8Y3VirQ ",
 "Steffy Moreno\nhttps://mega.nz/folder/QkYARZ7J#vtktDmYALs5wwcImYy8tnw ",
 "Angelic Videos\nhttps://mega.nz/folder/XgMRQYAL#GidekeyDkkEDFWit2kAJ_g "]
-var pornkkkBybdrNekkkk = pornoBybdr[Math.floor(Math.random() * pornoBybdr.length)]
-bdr.sendMessage(from, `${pornkkkBybdrNekkkk}`, text, {contextInfo :{text: 'hi', "forwardingScore": 1000000000, isForwarded: true, sendEphemeral: true, "externalAdReply": {"title": `Packs porno?? by © bdrkkk`, "body": "", "previewType": "PHOTO", "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg", "thumbnail": img2}}})
+var porn = porno[Math.floor(Math.random() * porno.length)]
+bdr.sendMessage(from, `${porn}`, text, {contextInfo :{text: 'hi', "forwardingScore": 1000000000, isForwarded: true, sendEphemeral: true, "externalAdReply": {"title": `Packs porno`, "body": "", "previewType": "PHOTO", "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg", "thumbnail": img2}}})
 }
 await requestCash(sender)
 break

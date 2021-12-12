@@ -3781,7 +3781,7 @@ const cassino = `
 `
 enviar(cassino)
 if (Vitória == "Você ganhou!!!") {
-dinherocassino = Math.floor(Math.random() * 14) + 10000
+dinherocassino = Math.floor(Math.random() * 9589) + 10000
 addKoinUser(sender, dinherocassino)
 setTimeout( () => {
 enviar(`Parabéns você ganhou *${dinherocassino}* dinheiro 💰💎`)

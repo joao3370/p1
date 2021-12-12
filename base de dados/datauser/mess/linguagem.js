@@ -190,7 +190,7 @@ ola ${pushname} Td Bem?
 
 exports.playrs = (pushname, hr, total_gp3, bateria) => {
 return `
-ol ${puashname} Td Bem?
+ol ${pushname} Td Bem?
 ┌═══════════════⊷
 ╰╮🗂ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』

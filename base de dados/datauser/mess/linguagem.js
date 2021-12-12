@@ -188,14 +188,14 @@ ola ${pushname} Td Bem?
 └══════════════⊷`
 }
 
-exports.playrs = (pushname, hr, total_gp4, bateria) => {
+exports.playrs = (pushname, hr, total_gp3, bateria) => {
 return `
 ol ${puashname} Td Bem?
 ┌═══════════════⊷
 ╰╮🗂ɪɴғᴏ ᴅᴏ ʙᴏᴛ ᜴⃕🌹
 ┌┤⋟ Pʀᴇғɪx:『${p}』
 ┃│⋟ Hᴏʀᴀ: ${hr}
-┃│⋟ Tᴏᴛᴀʟ ᴄʜᴀᴛ: ${total_gp4}
+┃│⋟ Tᴏᴛᴀʟ ᴄʜᴀᴛ: ${total_gp3}
 ┃│⋟ Bᴀᴛᴇʀɪᴀ: ${bateria}
 ┃│⋟ ${p}Report『Erros?』
 ┃╰═════════════⊷

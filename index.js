@@ -3679,13 +3679,6 @@ d.push(groupMembers[r].jid)
 }
 mentions(teks, d, true)
 break
-  
-case 'gado':		
-if (args.length < 1) return reply('marque seus amigos!')
-	rate = body.slice(1)
-const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
-const kl = ti[Math.floor(Math.random() * ti.length)]	client.sendMessage(from, 'Como é gado: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
-break
 
 case 'amongus':
 addFilter(from)

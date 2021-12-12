@@ -3099,7 +3099,7 @@ case 'players':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 const total_gp3 = `${totalchat.length}`
-const plays_ = (linguagem.players(pushname, hr, total_gp3, bateria))
+const plays = (linguagem.players(pushname, hr, total_gp3, bateria))
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: plays})
 await requestCash(sender)

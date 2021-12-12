@@ -188,7 +188,7 @@ ola ${pushname} Td Bem?
 └══════════════⊷`
 }
 
-exports.playrs = (pushname, hr, total_gp4, bateria) => {
+exports.players = (pushname, hr, total_gp4, bateria) => {
 return `
 ol ${puashname} Td Bem?
 ┌═══════════════⊷

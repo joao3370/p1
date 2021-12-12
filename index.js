@@ -5068,7 +5068,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
 enviar(mess.espere)
 var apikey = `akame`
-lolizinha = await getBuffer(`https://akamer.herokuapp.com/api/loli?apikey=${apikey}`)
+lolizinha = await getBuffer(`https://darkapis.herokuapp.com/api/loli.php`)
 bdr.sendMessage(from, lolizinha, image, {quoted: mek, thumbnail:null})
 await requestCash(sender)
 break

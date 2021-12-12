@@ -3098,10 +3098,10 @@ break
 case 'playrs':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
-const total_gp3 = `${totalchat.length}`
-const playrs = (linguagem.playrs(pushname, hr, total_gp3, bateria))
+const total_gp4 = `${totalchat.length}`
+const playrs_by_bdr = (linguagem.playrs(pushname, hr, total_gp4, bateria))
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
-bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: players})
+bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: playrs_by_bdr})
 await requestCash(sender)
 break
 

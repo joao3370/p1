@@ -3830,17 +3830,6 @@ enviar(pph)
 await requestCash(sender)
 break
 
-case 'gado':
-addFilter(from)
-if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
-var chifre = ["ultra extreme gado", "Gado-Master", "Gado-Rei", "Gado", "Escravo-ceta", "Escravo-ceta Maximo", "Gacorno?", "Jogador De Forno Livre<3", "Mestre Do Frifai<3<3", "Gado-Manso", "Gado-Conformado", "Gado-Incubado", "Gado Deus", "Mestre dos Gados", "Topa tudo por buceta", "Gado Comum", "Mini Gadinho", "Gado Iniciante", "Gado Basico", "Gado Intermediario", "Gado Avançado", "Gado Profisional", "Gado Mestre", "Gado Chifrudo", "Corno Conformado", "Corno HiperChifrudo", "Chifrudo Deus", "Mestre dos Chifrudos"]
-var gado = chifre[Math.floor(Math.random() * chifre.length)]
-gadop = `${Math.floor(Math.random() * 100)}`
-hisil = `Você é:\n\n${gado}`
-enviar(hisil)
-await requestCash(sender)
-break
-
 case 'sn':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
@@ -4273,7 +4262,7 @@ enviar(hasil)
 await requestCash(sender)
 break
 
-case 'gado2':
+case 'gado':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
 bdr.updatePresence(from, Presence.composing) 
@@ -4281,7 +4270,7 @@ random = `${Math.floor(Math.random() * 100)}`
 Gado = random
 if (Gado2 < 20 ) {ga = 'hmm... você pouco gado'} else if (Gado == 21 ) {ga = '+/- gado'} else if (Gado == 23 ) {ga = '+/- gado'} else if (Gado == 24 ) {ga = '+/- gado'} else if (Gado == 25 ) {ga = '+/- gado'} else if (Gado == 26 ) {ga = '+/- gado'} else if (Gado == 27 ) {ga = '+/- gado'} else if (Gado == 28 ) {ga = '+/- gado'} else if (Gado == 29 ) {ga = '+/- gado'} else if (Gado == 30 ) {ga = '+/- gado'} else if (Gado == 31 ) {Gado = 'To começando desconfiar...'} else if (Gado == 32 ) {ga= 'ihhh gado ein...'} else if (Gado == 33 ) {ga = 'Mds gado demais slk'} else if (Gado == 34 ) {ga = 'tenho minha desconfiança...??'} else if (Gado == 35 ) {ga = 'Muuuuuuu 🐂'} else if (Gado == 36 ) {ga = 'iiiih 🐃'} else if (Gado == 37 ) {ga = 'gado dms'} else if (Gado == 38 ) {ga = 'Mds gado demais'} else if (Gado == 39 ) {ga = '🐃'} else if (Gado == 40 ) {ga = 'Gad....😑'} else if (Gado == 41 ) {ga = 'você é né?😏'} else if (Gado == 42 ) {ga = 'você é né? Gado demais'} else if (Gado == 43 ) {ga = 'você é né?😏'} else if (Gado == 44 ) {ga = 'você é né?😏'} else if (Gado == 45 ) {ga = 'Mds que gadice'} else if (Gado == 46 ) {ga = 'Muuuuuuu'} else if (Gado == 47 ) {bo = 'você é né?😏'} else if (Gado == 48 ) {ga = 'man to começando desconfiar'} else if (Gado == 49 ) {ga = 'Mto gado'} else if (Gado == 50 ) {ga = 'você é ou não???'} else if (Gado > 51) {ga = 'você gado demais kkkkjkj'
 }
-hasil = `Você é ${random}% gado2\n\n${ga}`
+hasil = `Você é ${random}% gado\n\n${ga}`
 enviar(hasil)
 await requestCash(sender)
 break

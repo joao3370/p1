@@ -2566,7 +2566,7 @@ case 'figurinha':
 case 'sgif':  
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
-case 'teste27':  
+case 'stgf':  
 if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 const encmedia1 = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 const dlfile1 = await bdr.downloadMediaMessage(encmedia1)
@@ -2784,7 +2784,7 @@ rano = getRandom('.webp')
 anu1 = `https://api-gdr2.herokuapp.com/api/petpet?url=${imgtrg}`
 exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERRO`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -2811,7 +2811,7 @@ rano = getRandom('.webp')
 figuarma1 = `https://api-exteam.herokuapp.com/api/gun?img=${imgtrg}`
 exec(`wget ${figuarma1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 fs.unlinkSync(ranp)
-if (err) return enviar(`DEU ERROR 😞`)
+if (err) return enviar(`DEU ERROR`)
 nobg = fs.readFileSync(rano)
 bdr.sendMessage(from, nobg, sticker, {quoted: mek})
 fs.unlinkSync(rano)
@@ -5037,12 +5037,12 @@ case 'abraço':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
 enviar(mess.espere)
-lolizita_2 = (`https://bx-hunter.herokuapp.com/api/sfw/cuddle?apikey=Ikyy69`)
+lolizita_2 = (`https://www.luc4rio-rest-api.tk/api/anime/abraco`)
 img = await getBuffer(lolizita_2)
 bdr.sendMessage(from, img, image, {quoted: mek, thumbnail:null})
 await requestCash(sender)
 break
-
+ 
 case 'shinobu':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})

@@ -2547,7 +2547,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
 const total_gp2 = `${totalchat.length}`
 const figurinhas_by_bdr = (linguagem.figurinhas(pushname, hr, total_gp2, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: figurinhas_by_bdr})
 await requestCash(sender)
 break
@@ -3100,7 +3100,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 const total_gp3 = `${totalchat.length}`
 const plays = (linguagem.players(pushname, hr, total_gp3, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: plays})
 await requestCash(sender)
 break
@@ -3466,7 +3466,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 const total_gp4 = `${totalchat.length}`
 const nuvem_by_bdr = (linguagem.nuvem(pushname, hr, total_gp4, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: nuvem_by_bdr})
 await requestCash(sender)
 break

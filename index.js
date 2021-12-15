@@ -1927,7 +1927,7 @@ if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quote
 if (!isGroup) return enviar(linguagem.group())
 const total_gp1 = `${totalchat.length}`
 const grupo_by_bdr = (linguagem.menu2(pushname, hr, total_gp1, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/GrupoFT.mp4')              
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/grupo.mp4')              
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: grupo_by_bdr})
 await requestCash(sender)
 break
@@ -2547,8 +2547,8 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
 const total_gp2 = `${totalchat.length}`
 const figurinhas_by_bdr = (linguagem.figurinhas(pushname, hr, total_gp2, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg')
-bdr.sendMessage(from, tbuff, image, {thumbnail: fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg'),quoted: mek, caption: figurinhas_by_bdr})
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/figu.jpeg')
+bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: figurinhas_by_bdr})
 await requestCash(sender)
 break
 
@@ -3466,7 +3466,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 const total_gp4 = `${totalchat.length}`
 const nuvem_by_bdr = (linguagem.nuvem(pushname, hr, total_gp4, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/nuvem.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: nuvem_by_bdr})
 await requestCash(sender)
 break
@@ -3645,7 +3645,7 @@ addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 const total_gp5 = `${totalchat.length}`
 const jogos_by_bdr = (linguagem.jogos(pushname, hr, total_gp5, bateria))
-wew = fs.readFileSync('./base de dados/lib/bot/fotos/JogosFT.mp4')
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/jogos.mp4')
 bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: jogos_by_bdr})
 await requestCash(sender)
 break

@@ -2548,7 +2548,7 @@ if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quote
 const total_gp2 = `${totalchat.length}`
 const figurinhas_by_bdr = (linguagem.figurinhas(pushname, hr, total_gp2, bateria))
 wew = fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg')
-bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: figurinhas_by_bdr})
+bdr.sendMessage(from, tbuff, image, {thumbnail: fs.readFileSync('./base de dados/lib/bot/fotos/Login.jpeg'),quoted: mek, caption: figurinhas_by_bdr})
 await requestCash(sender)
 break
 

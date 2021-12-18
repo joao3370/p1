@@ -2006,7 +2006,7 @@ teks += `@${_.split('@')[0]}\n`
 mentions(from, mentioned, true)
 bdr.groupRemove(from, mentioned)
 } else {
-mentions(`${emoji_bot} Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} agora é admin do grupo!`, mentioned, true)
+mentions(`${emoji_bot} Ok, esse cara aqui: @${mentioned[0].split('@')[0]} agora é admin do grupo!`, mentioned, true)
 bdr.groupMakeAdmin(from, mentioned)
 }
 break
@@ -2325,13 +2325,13 @@ infoGrupTob = `
  *Membro* : ${groupMembers.length}
  *Admin* : ${groupAdmins.length}
 
-⬣ Welcome : ${isWelcome ? 'Ativado':'Desativado'}
-⬣ Anti Link : ${isAntiLink? 'Ativado':'Desativado'}
-⬣ Anti Fake : ${isAntifaker? 'Ativado':'Desativado'}
-⬣ Self Chat : ${isAutconversa? 'Ativado':'Desativado'}
-⬣ Anti Flod : ${isAntiflod? 'Ativado':'Desativado'}
+ Welcome : ${isWelcome ? 'Ativado':'Desativado'}
+ Anti Link : ${isAntiLink? 'Ativado':'Desativado'}
+ Anti Fake : ${isAntifaker? 'Ativado':'Desativado'}
+ Self Chat : ${isAutconversa? 'Ativado':'Desativado'}
+ Anti Flod : ${isAntiflod? 'Ativado':'Desativado'}
 
-💬 Descrição do grupo :
+ Descrição do grupo :
 \`\`\`${groupDesc}\`\`\``
 bdr.sendMessage(from, buffer, image, {quoted: mek, thumbnail:null, caption: infoGrupTob})
 } else if (args[0].toLowerCase() == 'perfil') {
@@ -2358,7 +2358,7 @@ Level: ${usLevel}
   XP: ${usXp}/${requirXp}
  Patente: ${patt}
  link: wa.me/${sender.split("@")[0]}
-╰━━━━━━─ • ─━━━━━━
+╰━━━━━━─  ─━━━━━━
 `
 its = await getBuffer (ppimg)
 bdr.sendMessage(from, its, image, {quoted: mek, thumbnail:null, caption: pf, contextInfo: {mentionedJid: [sender]}})

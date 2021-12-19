@@ -1945,7 +1945,7 @@ case 'banir':
 if (!isGroup) return enviar(linguagem.group())
 if (!isGroupAdmins) return enviar(linguagem.admin())
 if (!isBotGroupAdmins) return stickerAdm(from)
-u (args.length < 1) return enviar(`${emoji_bot} Sintaxe correta: ${p + comando}
+if (args.length < 1) return enviar(`${emoji_bot} Use: ${p + comando} <banir`)
 if (args[0].startsWith(`@${OwnerNumber}`)) return enviar(`Eu não posso enviar banir meu criador ${OwnerNumber} 😞`)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -2247,7 +2247,7 @@ if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quote
 if (!isGroup) return enviar(linguagem.group())
 if (!isGroupAdmins) return enviar(linguagem.admin())
 if (!isBotGroupAdmins) return stickerAdm(from)
-if (args.length < 1) return enviar(`${emoji_bot} Use: ${p + comando} <Novo nome do grupo>`)
+if (args.length < 1) return enviar(`${emoji_bot} Use: ${p + comando} <banir`)
 idgrup = `${from.split("@s.whatsapp.net")[0]}`;
 bdr.groupUpdateSubject(idgrup, `${body.slice(9)}`)
 bdr.sendMessage(from, `${emoji_bot} Nome do grupo alterado`, text, {quoted: mek})

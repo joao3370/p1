@@ -5238,7 +5238,7 @@ case 'ban':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek}) 
 if (!isGroup) return enviar(linguagem.group())
-if (!isOwner) return  enviar(linguagem.ownerB())
+if (!isGroupAdmins && !isOwner) return enviar(linguagem.admin())
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '.\n'

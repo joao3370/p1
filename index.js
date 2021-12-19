@@ -97,7 +97,7 @@ const limitawal = 30
 const vcard = `BEGIN:VCARD\n`
 + `VERSION:3.0\n`
 + `FN:pedro\n`
-+ `ORG:bdr-BOT;\n` 
++ `ORG:BOT;\n` 
 + `TEL;type=CELL;type=VOICE;waid=5548988062654:+55 48 98806-2654\n` 
 + `END:VCARD`
 

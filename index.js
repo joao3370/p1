@@ -1945,7 +1945,7 @@ case 'banir':
 if (!isGroup) return enviar(linguagem.group())
 if (!isGroupAdmins) return enviar(linguagem.admin())
 if (!isBotGroupAdmins) return stickerAdm(from)
-if (args.length < 1) return enviar(`${emoji_bot} Use: ${p + comando} <banir`)
+if (args.length < 1) return enviar(`${emoji_bot} Use: ${p + comando} para banir o participante`)
 if (args[0].startsWith(`@${OwnerNumber}`)) return enviar(`Eu não posso enviar banir meu criador ${OwnerNumber} 😞`)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid

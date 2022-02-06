@@ -5614,7 +5614,7 @@ bdr.sendMessage(from, dddlist, text, {quoted: mek})
 await requestCash(sender)
 break
 
-case 'consultarcpf:
+case 'consultarcpf':
 case 'cpf':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})

@@ -5614,6 +5614,24 @@ bdr.sendMessage(from, dddlist, text, {quoted: mek})
 await requestCash(sender)
 break
 
+case 'consultarcpf':
+case 'cpf':
+  if (!isPremium) return reply(`${(semPremium(p)}`)
+  if (args.length < 1) return reply(`Cade o Cpf ._.? Exemplo: ${prefix + command} 96944161168`)
+send = await fetchJson(`https://lzmods-api-v2-v2.herokuapp.com/apis-limitadas/consultas/cpf?cpf=${q}&apikey=lzmods`)
+var cpf = `
+🔎 Consulta De Cpf 🔍
+
+CPF INFORMADO: ${q}
+NOME DO TITULAR: ${send.nome_do_titular}
+DATA DE NASCIMENTO: ${send.data_de_nascimento}
+SITUAÇÃO: ${send.situaçao}
+EMITIDO EM: ${send.cadastrado_em}
+`
+bdr.sendMessage(from, cpf, text, {quoted: selo})
+wait requestCash(sender)
+break  
+
 case 'letra':
 addFilter(from)
 if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})

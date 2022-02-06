@@ -5616,7 +5616,7 @@ break
 
 case 'consultarcpf':
 case 'cpf':
-  if (!isPremium) return reply($(semPremium(p)`)
+  if (!isOwner && !isPremium) return webPage(semPremium(p))
   if (args.length < 1) return reply(`Cade o Cpf ._.? Exemplo: ${prefix + command} 96944161168`)
 send = await fetchJson(`https://lzmods-api-v2-v2.herokuapp.com/apis-limitadas/consultas/cpf?cpf=${q}&apikey=lzmods`)
 var cpf = `
@@ -5628,7 +5628,7 @@ DATA DE NASCIMENTO: ${send.data_de_nascimento}
 SITUAÇÃO: ${send.situaçao}
 EMITIDO EM: ${send.cadastrado_em}
 `
-bdr.sendMessage(from, cpf, text, {quoted: selo})
+bdr.sendMessage(from, cpf, text, {quoted: mek})
 wait requestCash(sender)
 break  
 

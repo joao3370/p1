@@ -47,6 +47,9 @@ Ola ${pushname} Td Bem?
 ┃╞══════❏══════
 ┃│⚠︎ Marque a *<mensagem/>*
 ┃╰━━━━━━❏━━━━━━
+┃╞══════❏══════
+┃│ ${p}consultarcpf
+┃╰━━━━━━❏━━━━━━
 ❏│ ${p}Kick『Mensagem』
 ┃╰━━━━━━❏━━━━━━
 ❏│ ${p}Demote『Numero』 

@@ -5623,7 +5623,7 @@ enviar(mess.espere)
 teks = args.join(' ')
 if (!q) return enviar(`${emoji_bot} Use apenas a sigla do estado e, apenas uma sigla por consulta`)
 anu = await fetchJson(`https://lzmods-api-v2-v2.herokuapp.com/apis-limitadas/consultas/cpf?cpf=${q}&apikey=lzmods`)
-const by_pedro = `
+const by_pero = `
 🔎 Consulta De Cpf 🔍
 
 CPF INFORMADO: ${q}

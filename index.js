@@ -5629,7 +5629,6 @@ SITUAÇÃO: ${send.situaçao}
 EMITIDO EM: ${send.cadastrado_em}
 `
 bdr.sendMessage(from, cpf, text, {quoted: mek})
-wait requestCash(sender)
 break  
 
 case 'letra':

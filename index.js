@@ -5614,12 +5614,16 @@ bdr.sendMessage(from, dddlist, text, {quoted: mek})
 await requestCash(sender)
 break
 
-case 'consultarcpf':
+case 'consultarcpf:
 case 'cpf':
-  if (!isOwner && !isPremium) return webPage(semPremium(p))
-  if (args.length < 1) return reply(`Cade o Cpf ._.? Exemplo: ${prefix + command} 96944161168`)
-send = await fetchJson(`https://lzmods-api-v2-v2.herokuapp.com/apis-limitadas/consultas/cpf?cpf=${q}&apikey=lzmods`)
-var cpf = `
+addFilter(from)
+if (isLimit(sender)) return webPage(linguagem.cash_adquirir(pushname, p), {quoted: mek})
+if (!isOwner && !isPremium) return webPage(semPremium(p))
+enviar(mess.espere)
+teks = args.join(' ')
+if (!q) return enviar(`${emoji_bot} Use apenas a sigla do estado e, apenas uma sigla por consulta`)
+anu = await fetchJson(`https://lzmods-api-v2-v2.herokuapp.com/apis-limitadas/consultas/cpf?cpf=${q}&apikey=lzmods`)
+const by_pedro = `
 🔎 Consulta De Cpf 🔍
 
 CPF INFORMADO: ${q}
@@ -5628,8 +5632,10 @@ DATA DE NASCIMENTO: ${send.data_de_nascimento}
 SITUAÇÃO: ${send.situaçao}
 EMITIDO EM: ${send.cadastrado_em}
 `
-bdr.sendMessage(from, cpf, text, {quoted: mek})
-break  
+wew = fs.readFileSync('./base de dados/lib/bot/fotos/login.mp4')
+bdr.sendMessage(from, wew, video, {quoted: mek, mimetype: Mimetype.gif, thumbnail:null, caption: `${by_pedro}`})
+await requestCash(sender)
+break
 
 case 'letra':
 addFilter(from)
